@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="no">
   <head>
+    <script src="libraries/circle-progress.js" type="module"></script>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
@@ -10,7 +12,8 @@
     <h1>Timer</h1>
 
     <div class="timer">
-      <div class="progress"></div>
+      <circle-progress id="cp" value="50" max="100" text-format="none"></circle-progress>
+      <div></div>
     </div>
 
     <script src="script.js"></script>
