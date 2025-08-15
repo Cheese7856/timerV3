@@ -2,20 +2,31 @@
 <html lang="no">
   <head>
     <script src="libraries/circle-progress.js" type="module"></script>
+    <script src="js/timer.js"></script>
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style/base.css" />
+    <link rel="stylesheet" href="style/style.css" />
     <title>Document</title>
   </head>
   <body>
     <h1>Timer</h1>
 
     <div class="timer">
-      <circle-progress id="cp" value="50" max="100" text-format="none"></circle-progress>
-      <div></div>
+      <circle-progress id="cp" value="70" max="100" text-format="none"></circle-progress>
     </div>
 
-    <script src="script.js"></script>
+    <div id="kontroller">
+      <div class="knapp-rad">
+        <button class="button color">Åpne i PIP</button>
+        <button class="button color">Åpne classroom</button>
+      </div>
+      <select class="color" id="klassevelger" name="Klassevelger" onchange="endreKlasse()">
+        <option value="">Velg klasse</option>
+        <option value="8A">Klasse 8A</option>
+        <option value="8B">Klasse 8B</option>
+      </select>
+    </div>
   </body>
 </html>
