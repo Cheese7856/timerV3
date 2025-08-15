@@ -1,0 +1,167 @@
+{
+  "Klasser": {
+    "Engelsk": { "lenke": "https://google.com" }
+  },
+  "Timeplan": {
+    "Mandag": [
+      {
+        "Navn": "Utdanningsvalg",
+        "Start": "08:30",
+        "Slutt": "09:00",
+        "Lærer": ["bardkr"]
+      },
+      {
+        "Navn": "Norsk",
+        "Start": "09:00",
+        "Slutt": "09:30",
+        "Lærer": ["bardkr", "JSU"]
+      },
+      {
+        "Navn": "Norsk",
+        "Start": "09:40",
+        "Slutt": "10:40",
+        "Lærer": ["JSU"]
+      },
+      {
+        "Navn": "Matematikk",
+        "Start": "10:50",
+        "Slutt": "11:50",
+        "Lærer": ["verfyl", "inetop"]
+      },
+      {
+        "Navn": "Engelsk",
+        "Start": "12:20",
+        "Slutt": "13:20",
+        "Lærer": ["heiott", "JRA"]
+      }
+    ],
+    "Tirsdag": [
+      {
+        "Navn": "Spansk",
+        "Start": "08:30",
+        "Slutt": "09:30",
+        "Lærer": ["MAM"]
+      },
+      {
+        "Navn": "Spansk",
+        "Start": "09:40",
+        "Slutt": "10:40",
+        "Lærer": ["MAM"]
+      },
+      {
+        "Navn": "Norsk",
+        "Start": "10:50",
+        "Slutt": "11:50",
+        "Lærer": ["bardkr", "JSU"]
+      },
+      {
+        "Navn": "Engelsk",
+        "Start": "12:20",
+        "Slutt": "13:20",
+        "Lærer": ["heiott", "JRA"]
+      }
+    ],
+    "Onsdag": [
+      {
+        "Navn": "Mat og helse",
+        "Start": "08:30",
+        "Slutt": "09:30",
+        "Lærer": ["annmyh"]
+      },
+      {
+        "Navn": "Mat og helse",
+        "Start": "09:40",
+        "Slutt": "10:40",
+        "Lærer": ["ADH", "annmyh"]
+      },
+      {
+        "Navn": "Naturfag",
+        "Start": "10:50",
+        "Slutt": "11:50",
+        "Lærer": ["inetop"]
+      },
+      {
+        "Navn": "KRLE",
+        "Start": "12:20",
+        "Slutt": "13:20",
+        "Lærer": ["verfyl"]
+      },
+      {
+        "Navn": "Valgfag",
+        "Start": "13:30",
+        "Slutt": "14:30",
+        "Lærer": ["MNE"]
+      },
+      {
+        "Navn": "Valgfag",
+        "Start": "14:30",
+        "Slutt": "15:30",
+        "Lærer": ["MNE"]
+      }
+    ],
+    "Torsdag": [
+      {
+        "Navn": "Utdanningsvalg",
+        "Start": "09:40",
+        "Slutt": "10:40",
+        "Lærer": ["verfyl"]
+      },
+      {
+        "Navn": "Samfunnsfag",
+        "Start": "10:50",
+        "Slutt": "11:50",
+        "Lærer": ["verfyl"]
+      },
+      {
+        "Navn": "Norsk",
+        "Start": "12:20",
+        "Slutt": "13:20",
+        "Lærer": ["bardkr", "JSU"]
+      },
+      {
+        "Navn": "Matematikk",
+        "Start": "13:30",
+        "Slutt": "14:30",
+        "Lærer": ["verfyl", "inetop"]
+      },
+      {
+        "Navn": "Matematikk",
+        "Start": "14:40",
+        "Slutt": "15:10",
+        "Lærer": ["verfyl", "inetop"]
+      }
+    ],
+    "Fredag": [
+      {
+        "Navn": "KRLE",
+        "Start": "08:30",
+        "Slutt": "09:30",
+        "Lærer": ["verfyl"]
+      },
+      {
+        "Navn": "Samfunnsfag",
+        "Start": "09:40",
+        "Slutt": "10:40",
+        "Lærer": ["verfyl"]
+      },
+      {
+        "Navn": "Naturfag",
+        "Start": "10:50",
+        "Slutt": "11:50",
+        "Lærer": ["inetop"]
+      },
+      {
+        "Navn": "Kroppsøving",
+        "Start": "13:00",
+        "Slutt": "14:00",
+        "Lærer": ["heiott"]
+      },
+      {
+        "Navn": "Kroppsøving",
+        "Start": "14:00",
+        "Slutt": "15:00",
+        "Lærer": ["heiott"]
+      }
+    ]
+  }
+}
