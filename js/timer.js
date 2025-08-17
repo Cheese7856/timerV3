@@ -1,19 +1,17 @@
-dayjs.extend(window.dayjs_plugin_customParseFormat);
-
 const resultat = 0
 
 function counterTo(start, slutt) {
     const cp = document.querySelector("#cp");
 
-    const startDT = dayjs(start, "H:mm");
-    const sluttDT = dayjs(slutt, "H:mm");
+    const startDT = dayjs(start, "HH:mm");
+    const sluttDT = dayjs(slutt, "HH:mm");
 
     const max = sluttDT.diff(startDT, "second");
     cp.setAttribute("max", max);
 
-    setInterval(() => {
+    const timerLoop = setInterval(() => {
         const cp = document.querySelector("#cp");
-        const tekst = document.querySelector("#cp").shadowRoot.querySelector("svg > text");
+        const tekst = document.querySelector("#timerTekst");
 
         const nå = dayjs(); // nåtid
 
@@ -28,25 +26,27 @@ function counterTo(start, slutt) {
 
 
         const resultat = `${min}:${sek.toString().padStart(2, "0")}`;
-        console.log(resultat);
-        console.log(tekst)
 
-
+        tekst.innerHTML = resultat;
 
         //Nå for sirkelgreien
 
         const value = nå.diff(startDT, "second");
-        cp.value = "1000" //FOR EN ELLER ANNEN GRUNN SÅ VIRKER IKKE DETTE
+        cp.value = value;
 
-        setTimeout(function () {
 
-            tekst.innerHTML = resultat //KANSKJE JEG KAN FIKSE DET VED Å BRUKE EGEN TEKST
+        if (diffSek <= 0) {
+            clearInterval(timerLoop);
+        }
 
-        }, 50);
-
-    }, 1000); // 1000 ms = 1 sekund
+    }, 1000);
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-    counterTo("22:50", "23:10")
+    counterTo("17:20", "17:40")
 });
+
+
+function pip() {
+    console.log("aaa")
+}

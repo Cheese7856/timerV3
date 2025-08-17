@@ -5,7 +5,12 @@
     <script src="libraries/dayjs.min.js"></script>
     <script src="libraries/customParseFormat.js"></script>
 
+    <script>
+      dayjs.extend(window.dayjs_plugin_customParseFormat);
+    </script>
+
     <script src="js/timer.js"></script>
+    <script type="module" src="js/klasseTilPlan.js"></script>
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -18,11 +23,12 @@
 
     <div class="timer">
       <circle-progress id="cp" value="70" max="100" text-format="none"></circle-progress>
+      <p id="timerTekst">12:30</p>
     </div>
 
     <div id="kontroller">
       <div class="knapp-rad">
-        <button class="button color">Åpne i PIP</button>
+        <button class="button color" onclick="pip()">Åpne i PIP</button>
         <button class="button color">Åpne classroom</button>
       </div>
       <select class="color" id="klassevelger" name="Klassevelger" onchange="endreKlasse()">

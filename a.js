@@ -36,5 +36,3 @@ function counterTo(start, slutt) {
 document.addEventListener("DOMContentLoaded", () => {
     counterTo("22:30", "22:50")
 });
-
-s
