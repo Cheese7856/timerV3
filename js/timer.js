@@ -37,13 +37,15 @@ function counterTo(start, slutt) {
 
         if (diffSek <= 0) {
             clearInterval(timerLoop);
+            window.gjørAlt();
         }
 
     }, 1000);
+
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-    counterTo("17:20", "17:40")
+    //counterTo("08:55", "9:45")
 });
 
 

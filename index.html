@@ -21,12 +21,50 @@
   <body>
     <h1>Timer</h1>
 
+    <div id="flexMain">
+      <div class="kontroller">
+        <div class="knapp-rad">
+          <button class="button color" onclick="pip()">Åpne i PIP</button>
+          <button class="button color">Åpne classroom</button>
+        </div>
+        <select class="color" id="klassevelger-side" name="Klassevelger" onchange="endreKlasse()">
+          <option value="">Velg klasse</option>
+          <option value="9E">Klasse 9E</option>
+        </select>
+      </div>
+
+      <div class="info">
+        <table>
+          <tr>
+            <th id="timeH">Neste time:</th>
+            <td id="time">Ukjent</td>
+          </tr>
+          <tr>
+            <th>Lærer:</th>
+            <td id="lærer">Ukjent</td>
+          </tr>
+          <tr>
+            <th>Lengde:</th>
+            <td id="lengde">Ukjent</td>
+          </tr>
+          <tr>
+            <th>Starter:</th>
+            <td id="start">Ukjent</td>
+          </tr>
+          <tr>
+            <th>Slutter:</th>
+            <td id="slutt">Ukjent</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
     <div class="timer">
       <circle-progress id="cp" value="70" max="100" text-format="none"></circle-progress>
       <p id="timerTekst">12:30</p>
     </div>
 
-    <div id="kontroller">
+    <div id="kontroller" style="display: none">
       <div class="knapp-rad">
         <button class="button color" onclick="pip()">Åpne i PIP</button>
         <button class="button color">Åpne classroom</button>

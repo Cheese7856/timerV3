@@ -1,9 +1,50 @@
 :root {
   --timer-size: 300px;
+  --blå-farge: hsl(231, 90%, 60%);
 }
 
 body {
   background-color: #f0f0f0;
+}
+
+#flexMain {
+  display: flex;
+  justify-content: space-between;
+
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+
+  padding: 20px;
+  width: calc(100% - 40px);
+}
+
+.kontroller {
+  height: auto;
+  display: flex;
+  flex-direction: column; /* Endret fra row til column */
+  justify-content: center;
+  align-items: center;
+  gap: 15px 0;
+}
+
+.info {
+  min-width: 200px;
+}
+
+table {
+  /* border: #000 solid 2px; */
+  border-radius: 6px;
+  text-align: left;
+  padding: 10px;
+
+  background-color: var(--blå-farge);
+  color: #fff;
+}
+
+td {
+  padding-left: 20px;
 }
 
 #cp::part(base) {
@@ -18,6 +59,8 @@ body {
 }
 #cp::part(circle) {
   stroke-width: 3px;
+  border-radius: 50%;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 1); /* Example shadow */
 }
 
 .timer {
@@ -77,6 +120,13 @@ button {
   height: 30px;
 }
 
+#klassevelger-side {
+  width: 100%;
+  padding: 6px 10px;
+  line-height: normal;
+  box-sizing: border-box;
+}
+
 /* div {
   background-color: rgba(255, 0, 0, 0.2);
 } */
@@ -84,7 +134,7 @@ button {
 .color {
   align-items: center;
   appearance: none;
-  background-color: hsl(231, 90%, 60%);
+  background-color: var(--blå-farge);
   border: 0;
   border-radius: 6px;
   /*box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgba(58, 65, 111, 0.5) 0 -3px 0 inset;*/
