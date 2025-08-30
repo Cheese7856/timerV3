@@ -123,12 +123,6 @@
         "Start": "13:30",
         "Slutt": "14:30",
         "Lærer": ["Veronica", "Ine"]
-      },
-      {
-        "Navn": "Matematikk",
-        "Start": "14:40",
-        "Slutt": "15:10",
-        "Lærer": ["Veronica", "Ine"]
       }
     ],
     "Fredag": [
@@ -152,14 +146,14 @@
       },
       {
         "Navn": "Kroppsøving",
-        "Start": "13:00",
-        "Slutt": "14:00",
+        "Start": "12:20",
+        "Slutt": "12:20",
         "Lærer": ["Heidi"]
       },
       {
         "Navn": "Kroppsøving",
-        "Start": "14:00",
-        "Slutt": "15:00",
+        "Start": "13:30",
+        "Slutt": "14:30",
         "Lærer": ["Heidi"]
       }
     ]
