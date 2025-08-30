@@ -51,7 +51,11 @@ function gjørAlt(klasse) {
     const nesteID = loopTilNeste(timeplanDag, d)
     const nesteTime = timeplanDag[nesteID]
 
-    console.log(nesteTime.Navn)
+    if (!nesteTime) {
+
+        document.querySelector("#timerTekst").innerHTML = ""
+        return (null)
+    }
 
     const startTid = dayjs(nesteTime.Start, "HH:mm");
 

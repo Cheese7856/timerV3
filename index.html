@@ -9,9 +9,6 @@
       dayjs.extend(window.dayjs_plugin_customParseFormat);
     </script>
 
-    <script src="js/timer.js"></script>
-    <script type="module" src="js/klasseTilPlan.js"></script>
-
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style/base.css" />
@@ -74,5 +71,10 @@
         <option value="9E">Klasse 9E</option>
       </select>
     </div>
+
+    <canvas id="pipCanvas" width="300" height="150" style="position: fixed; left: -9999px; opacity: 0"></canvas>
+
+    <script src="js/timer.js"></script>
+    <script type="module" src="js/klasseTilPlan.js"></script>
   </body>
 </html>
