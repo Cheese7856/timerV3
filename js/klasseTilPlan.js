@@ -1,5 +1,37 @@
-const response = await fetch('klasser/9E.json');
-const klasseData = await response.json();
+// const response = await fetch('klasser/9E copy.json');
+// const klasseData = await response.json();
+
+const klasserJSON = await fetch("klasser.json");
+const klasserData = await klasserJSON.json();
+
+var valgtKlasse = localStorage.getItem("klasse")
+
+async function hentKlasse() {
+    const klasseFil = await fetch(klasserData[valgtKlasse].json)
+    const klasseData = await klasseFil.json()
+    console.log(klasseData)
+    return klasseData
+}
+
+
+const klasseData = await hentKlasse();
+
+console.log(klasseData)
+
+const klassevelger = document.getElementById("klassevelger")
+
+function endreKlasse() {
+    const verdi = klassevelger.value
+    if (verdi != "") {
+        console.log("Endrer klasse til " + verdi)
+        localStorage.setItem("klasse", verdi)
+        valgtKlasse = verdi
+    }
+}
+
+
+window.endreKlasse = endreKlasse;
+
 
 function render(time, iTime) {
     document.getElementById("timeH").innerHTML = iTime ? "Time:" : "Neste time:";
@@ -58,7 +90,6 @@ function gjørAlt(klasse) {
     }
 
     const startTid = dayjs(nesteTime.Start, "HH:mm");
-
     if (startTid.isAfter(d)) {
         //I et Friminutt
 

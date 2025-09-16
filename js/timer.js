@@ -57,7 +57,6 @@ function counterTo(start, slutt) {
     }, 1000);
 }
 
-//counterTo("21:20", "21:27");
 
 function pip() {
     const canvas = document.getElementById("pipCanvas");

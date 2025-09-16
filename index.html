@@ -24,9 +24,10 @@
           <button class="button color" onclick="pip()">Åpne i PIP</button>
           <button class="button color">Åpne classroom</button>
         </div>
-        <select class="color" id="klassevelger-side" name="Klassevelger" onchange="endreKlasse()">
+        <select class="color" id="klassevelger" name="Klassevelger" onchange="endreKlasse()">
           <option value="">Velg klasse</option>
           <option value="9E">Klasse 9E</option>
+          <option value="9D">Klasse 9D</option>
         </select>
       </div>
 
@@ -58,7 +59,7 @@
 
     <div class="timer">
       <circle-progress id="cp" value="70" max="100" text-format="none"></circle-progress>
-      <p id="timerTekst">12:30</p>
+      <p id="timerTekst">Laster</p>
     </div>
 
     <div id="kontroller" style="display: none">
@@ -66,7 +67,7 @@
         <button class="button color" onclick="pip()">Åpne i PIP</button>
         <button class="button color">Åpne classroom</button>
       </div>
-      <select class="color" id="klassevelger" name="Klassevelger" onchange="endreKlasse()">
+      <select class="color" id="klassevelger-blank" name="Klassevelger" onchange="endreKlasse()">
         <option value="">Velg klasse</option>
         <option value="9E">Klasse 9E</option>
       </select>
