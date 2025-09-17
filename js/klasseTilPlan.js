@@ -4,7 +4,7 @@
 const klasserJSON = await fetch("klasser.json");
 const klasserData = await klasserJSON.json();
 
-var valgtKlasse = localStorage.getItem("klasse")
+var valgtKlasse = localStorage.getItem("klasse") || "8E";
 
 async function hentKlasse() {
     const klasseFil = await fetch(klasserData[valgtKlasse].json)
