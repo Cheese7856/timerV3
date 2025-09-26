@@ -37,16 +37,16 @@
     ],
     "Tirsdag": [
       {
-        "Navn": "Spansk",
+        "Navn": "Fremmedspråk / Arbeidslivsfag",
         "Start": "08:30",
         "Slutt": "09:30",
-        "Lærer": ["Malene"]
+        "Lærer": [""]
       },
       {
-        "Navn": "Spansk",
+        "Navn": "Fremmedspråk / Arbeidslivsfag",
         "Start": "09:40",
         "Slutt": "10:40",
-        "Lærer": ["Malene"]
+        "Lærer": [""]
       },
       {
         "Navn": "Norsk",
