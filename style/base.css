@@ -3,10 +3,12 @@ body {
 }
 
 h1 {
+  color: var(--tittelFarge);
   text-align: center;
   font-size: min(100px, 9vw);
   margin-top: 10px;
   margin-bottom: 10px;
+  transition: color var(--modeTransition) ease;
 }
 
 h2 {

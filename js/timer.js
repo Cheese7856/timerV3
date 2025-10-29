@@ -12,15 +12,20 @@ function drawPipCountdown(min, sek) {
     // Beregn hvor mange sekunder som er igjen totalt
     const totalSekIgjen = min * 60 + sek;
 
-    // Siste 10 sekunder: blink rød/hvit annenhvert sekund
-    let bakgrunn = "white";
+    // Bestem standard bakgrunn: hvit, eller blå hvis body har klassen darkMode
+    const erDark = document.body.classList.contains("darkMode");
+    const standardBakgrunn = erDark ? "#1c1c1d" : "white";
+    const tekstFarge = erDark ? "white" : "black";
+
+    // Siste 10 sekunder: blink rød/standardBakgrunn annenhvert sekund
+    let bakgrunn = standardBakgrunn;
     if (totalSekIgjen <= 10) {
-        bakgrunn = (totalSekIgjen % 2 === 0) ? "red" : "white";
+        bakgrunn = (totalSekIgjen % 2 === 0) ? "red" : standardBakgrunn;
     }
 
     ctx.fillStyle = bakgrunn;
     ctx.fillRect(0, 0, canvas.width, canvas.height);
-    ctx.fillStyle = "black";
+    ctx.fillStyle = tekstFarge;
     ctx.font = "50px Arial";
     ctx.textAlign = "center";
     ctx.textBaseline = "middle";
