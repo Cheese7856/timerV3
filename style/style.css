@@ -25,6 +25,10 @@
   --timerFarge: var(--blå-farge);
 }
 
+.visning2 {
+  --timer-size: 600px;
+}
+
 body {
   background-color: var(--bakgrunn);
   transition: background-color var(--modeTransition) ease, color var(--modeTransition) ease;
@@ -33,6 +37,7 @@ body {
 #flexMain {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
   position: absolute;
   top: 50%;
@@ -43,6 +48,10 @@ body {
   width: calc(100% - 40px);
 }
 
+.visning2 #flexMain {
+  justify-content: space-around;
+}
+
 .kontroller {
   height: auto;
   display: flex;
@@ -50,6 +59,10 @@ body {
   justify-content: center;
   align-items: center;
   gap: 15px 0;
+}
+
+.visning2 .kontroller {
+  display: none;
 }
 
 .info {
@@ -64,6 +77,11 @@ table {
   background-color: var(--blå-farge);
   color: #fff;
   box-shadow: var(--blåSkygge);
+}
+
+.visning2 table {
+  font-size: 30px;
+  border-radius: 12px;
 }
 
 td {
@@ -91,6 +109,10 @@ td {
 }
 
 .timer {
+  position: relative;
+}
+
+.visning1 .timer {
   margin: 0;
   padding: 0;
 
@@ -116,6 +138,10 @@ td {
   color: var(--timerTekstFarge);
 
   transition: color var(--modeTransition) ease;
+}
+
+.visning2 #timerTekst {
+  font-size: 120px;
 }
 
 #kontroller {
@@ -203,7 +229,21 @@ button {
   transform: translateY(2px);
 }
 
-#themeSwitch {
+#modusKnapper {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+
+  width: 110px;
+
+  display: flex;
+  justify-content: space-between;
+
+  /* background-color: hsl(0, 0%, 75%);
+  border-radius: 20px; */
+}
+
+.modusKnapp {
   background-color: hsl(0, 0%, 85%);
   width: 50px;
   height: 50px;
@@ -214,14 +254,10 @@ button {
   justify-content: center;
   align-items: center;
 
-  position: fixed;
-  top: 20px;
-  right: 20px;
-
   cursor: pointer;
 }
 
-#themeSwitch svg {
+.modusKnapp svg {
   fill: #000000;
 }
 
@@ -235,4 +271,20 @@ button {
 
 .darkMode #themeSwitch svg:last-child {
   display: block;
+}
+
+#visningKnapp svg:last-child {
+  display: none;
+}
+
+.visning2 #visningKnapp svg:first-child {
+  display: none;
+}
+
+.visning2 #visningKnapp svg:last-child {
+  display: block;
+}
+
+.visning2 h1 {
+  display: none;
 }
