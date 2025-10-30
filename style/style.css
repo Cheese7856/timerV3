@@ -75,11 +75,15 @@ td {
   stroke-width: 6px;
   stroke: var(--timerFarge);
   stroke-linecap: round;
+  transition: stroke var(--modeTransition) ease;
 }
+
 #cp::part(circle) {
   stroke-width: 3px;
   border-radius: 50%;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 1);
+  stroke: var(--antiProgress);
+  transition: stroke var(--modeTransition) ease;
 }
 
 .timer {
@@ -106,6 +110,8 @@ td {
   font-size: 65px;
   font-weight: bold;
   color: var(--timerTekstFarge);
+
+  transition: color var(--modeTransition) ease;
 }
 
 #kontroller {
