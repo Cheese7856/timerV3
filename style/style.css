@@ -15,8 +15,8 @@
 .darkMode {
   --antiProgress: #c7c7c7;
   --bakgrunn: #1c1c1d;
-  --tittelFarge: #e2e5e9;
-  --timerTekstFarge: #e2e5e9;
+  --tittelFarge: #ffffff;
+  --timerTekstFarge: #ffffff;
   --blå-farge: hsl(226, 68%, 61%);
   --timerFarge: hsl(130, 77%, 59%);
 }
