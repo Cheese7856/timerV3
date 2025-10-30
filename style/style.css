@@ -21,6 +21,10 @@
   --timerFarge: hsl(130, 77%, 59%);
 }
 
+.friminutt {
+  --timerFarge: var(--blå-farge);
+}
+
 body {
   background-color: var(--bakgrunn);
   transition: background-color var(--modeTransition) ease, color var(--modeTransition) ease;

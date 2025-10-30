@@ -93,6 +93,8 @@ function gjørAlt(klasse) {
     if (startTid.isAfter(d)) {
         //I et Friminutt
 
+        document.body.classList.add("friminutt")
+
         console.log("Counter:", timeplanDag[nesteID - 1].Slutt, nesteTime.Start)
         render(nesteTime, false)
         // counterTo("09:50", "10:09")
@@ -100,6 +102,8 @@ function gjørAlt(klasse) {
 
     } else {
         //I en Time
+
+        document.body.classList.remove("friminutt")
 
         console.log("Counter:", nesteTime.Start, nesteTime.Slutt)
 
