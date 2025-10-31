@@ -147,13 +147,7 @@
       {
         "Navn": "Kroppsøving",
         "Start": "12:20",
-        "Slutt": "12:20",
-        "Lærer": ["Heidi"]
-      },
-      {
-        "Navn": "Kroppsøving",
-        "Start": "13:30",
-        "Slutt": "14:30",
+        "Slutt": "14:20",
         "Lærer": ["Heidi"]
       }
     ]
