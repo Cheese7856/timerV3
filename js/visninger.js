@@ -1,21 +1,23 @@
-let showMode = localStorage.getItem("showMode")
-const showSwitch = document.getElementById("visningKnapp")
+let visning = 0
 
-const enableshowMode = () => {
-    document.body.classList.add("visning2")
-    document.body.classList.remove("visning1")
-    localStorage.setItem("showMode", "active")
+
+
+function byttVisning() {
+    visning += 1
+    visning = visning % 3
+
+    if (visning == 0) {
+        document.body.classList.add("visning1")
+        document.body.classList.remove("visning2", "visning3")
+    }
+    if (visning == 1) {
+        document.body.classList.add("visning2")
+        document.body.classList.remove("visning1", "visning3")
+    }
+    if (visning == 2) {
+        document.body.classList.add("visning3")
+        document.body.classList.remove("visning2", "visning1")
+    }
+
+    opdater()
 }
-
-const disableshowMode = () => {
-    document.body.classList.add("visning1")
-    document.body.classList.remove("visning2")
-    localStorage.setItem("showMode", null)
-}
-
-if (showMode === "active") enableshowMode()
-
-showSwitch.addEventListener("click", () => {
-    showMode = localStorage.getItem("showMode")
-    showMode !== "active" ? enableshowMode() : disableshowMode()
-})

@@ -98,7 +98,7 @@ function gjørAlt(klasse) {
         console.log("Counter:", timeplanDag[nesteID - 1].Slutt, nesteTime.Start)
         render(nesteTime, false)
         // counterTo("09:50", "10:09")
-        counterTo(timeplanDag[nesteID - 1].Slutt, nesteTime.Start)
+        counterTo(timeplanDag[nesteID - 1].Slutt, nesteTime.Start, nesteTime.Navn)
 
     } else {
         //I en Time
@@ -108,7 +108,7 @@ function gjørAlt(klasse) {
         console.log("Counter:", nesteTime.Start, nesteTime.Slutt)
 
         // counterTo("08:55", "9:45")
-        counterTo(nesteTime.Start, nesteTime.Slutt)
+        counterTo(nesteTime.Start, nesteTime.Slutt, nesteTime.Navn)
 
         render(nesteTime, true)
     }

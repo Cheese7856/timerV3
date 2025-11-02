@@ -4,6 +4,10 @@ const tekst = document.querySelector("#timerTekst");
 let pipAktiv = false;
 let pipVideo = null;
 
+let startDT
+let sluttDT
+let navn
+
 function drawPipCountdown(min, sek) {
     const canvas = document.getElementById("pipCanvas");
     const ctx = canvas.getContext("2d");
@@ -32,34 +36,47 @@ function drawPipCountdown(min, sek) {
     ctx.fillText(`${min}:${sek.toString().padStart(2, "0")}`, canvas.width / 2, canvas.height / 2);
 }
 
-function counterTo(start, slutt) {
+function counterTo(start, slutt, navnevan) {
     const cp = document.querySelector("#cp");
-    const startDT = dayjs(start, "HH:mm");
-    const sluttDT = dayjs(slutt, "HH:mm");
+    startDT = dayjs(start, "HH:mm");
+    sluttDT = dayjs(slutt, "HH:mm");
+    navn = navnevan
     const max = sluttDT.diff(startDT, "second");
     cp.setAttribute("max", max);
 
     const timerLoop = setInterval(() => {
-        const nå = dayjs();
-        const diffSek = sluttDT.diff(nå, "second");
-        const min = Math.floor(diffSek / 60);
-        const sek = diffSek % 60;
-        const resultat = `${min}:${sek.toString().padStart(2, "0")}`;
-        tekst.innerHTML = resultat;
-
-        // Oppdater PiP hvis aktiv
-        if (pipAktiv) {
-            drawPipCountdown(min, sek);
-        }
-
-        const value = nå.diff(startDT, "second");
-        cp.value = value;
-
-        if (diffSek <= 0) {
-            clearInterval(timerLoop);
-            window.gjørAlt();
-        }
+        opdater()
     }, 1000);
+}
+
+function opdater() {
+    const nå = dayjs();
+    const diffSek = sluttDT.diff(nå, "second");
+    const min = Math.floor(diffSek / 60);
+    const sek = diffSek % 60;
+    const resultat = `${min}:${sek.toString().padStart(2, "0")}`;
+
+
+    if (document.body.classList.contains("visning3")) {
+        tekst.innerHTML = `${resultat}<br><span>${navn}</span>`;
+    } else {
+        tekst.innerHTML = resultat;
+    }
+
+
+
+    // Oppdater PiP hvis aktiv
+    if (pipAktiv) {
+        drawPipCountdown(min, sek);
+    }
+
+    const value = nå.diff(startDT, "second");
+    cp.value = value;
+
+    if (diffSek <= 0) {
+        clearInterval(timerLoop);
+        window.gjørAlt();
+    }
 }
 
 
