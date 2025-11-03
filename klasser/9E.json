@@ -5,14 +5,8 @@
   "Timeplan": {
     "Mandag": [
       {
-        "Navn": "Utdanningsvalg",
+        "Navn": "Utdanningsvalg / Norsk",
         "Start": "08:30",
-        "Slutt": "09:00",
-        "Lærer": ["Bård"]
-      },
-      {
-        "Navn": "Norsk",
-        "Start": "09:00",
         "Slutt": "09:30",
         "Lærer": ["Bård", "Jan Åge"]
       },
