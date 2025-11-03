@@ -85,7 +85,7 @@ function gjørAlt(klasse) {
 
     if (!nesteTime) {
 
-        document.querySelector("#timerTekst").innerHTML = ""
+        document.querySelector("#timerTekst").innerHTML = `Ingen time`
         return (null)
     }
 

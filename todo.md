@@ -9,4 +9,4 @@
   - [x] Visning 2 (timer og info)
   - [x] Visning 3 (kun timer)
 - [ ] Åpne classroom link
-- [ ] Fikse feilmelding når ingen timer finnes
+- [x] ~~Fikse feilmelding når ingen timer finnes~~ Ingen response med ingen time
