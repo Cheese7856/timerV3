@@ -7,6 +7,7 @@ let pipVideo = null;
 let startDT
 let sluttDT
 let navn
+let diffSek
 
 function drawPipCountdown(min, sek) {
     const canvas = document.getElementById("pipCanvas");
@@ -44,14 +45,22 @@ function counterTo(start, slutt, navnevan) {
     const max = sluttDT.diff(startDT, "second");
     cp.setAttribute("max", max);
 
-    const timerLoop = setInterval(() => {
+    timerLoop = setInterval(() => { // Remove 'const' to use the global variable
         opdater()
+
+        console.log(diffSek)
+
+        if (diffSek <= 0) {
+            clearInterval(timerLoop);
+            diffSek = 999
+            window.gjørAlt();
+        }
     }, 1000);
 }
 
 function opdater() {
     const nå = dayjs();
-    const diffSek = sluttDT.diff(nå, "second");
+    diffSek = sluttDT.diff(nå, "second");
     const min = Math.floor(diffSek / 60);
     const sek = diffSek % 60;
     const resultat = `${min}:${sek.toString().padStart(2, "0")}`;
@@ -72,11 +81,6 @@ function opdater() {
 
     const value = nå.diff(startDT, "second");
     cp.value = value;
-
-    if (diffSek <= 0) {
-        clearInterval(timerLoop);
-        window.gjørAlt();
-    }
 }
 
 
