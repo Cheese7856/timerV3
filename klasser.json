@@ -1,4 +1,4 @@
 {
-  "9D": { "navn": "Klasse 9D", "json": "klasser/9D.json" },
-  "9E": { "navn": "Klasse 9E", "json": "klasser/9E.json" }
+  "9D": { "navn": "Klasse 9D", "json": "klasser/9D.json", "index": 1 },
+  "9E": { "navn": "Klasse 9E", "json": "klasser/9E.json", "index": 0 }
 }

@@ -20,12 +20,15 @@ console.log(klasseData)
 
 const klassevelger = document.getElementById("klassevelger")
 
+klassevelger.selectedIndex = klasserData[valgtKlasse].index;
+
 function endreKlasse() {
     const verdi = klassevelger.value
     if (verdi != "") {
         console.log("Endrer klasse til " + verdi)
         localStorage.setItem("klasse", verdi)
         valgtKlasse = verdi
+        location.reload();
     }
 }
 

@@ -2,7 +2,7 @@
 
 - [x] Legge til klasse-velger
   - [x] Lagre valgt klasse
-  - [ ] Gjøre at siden reloader når man bytter klasse
+  - [x] Gjøre at siden reloader når man bytter klasse
 - [x] Dark mode
 - [x] Fullskjermvisninger
   - [x] Visning 1 (vanlig)
