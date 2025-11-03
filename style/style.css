@@ -26,11 +26,11 @@
 }
 
 .visning2 {
-  --timer-size: 600px;
+  --timer-size: 580px;
 }
 
 .visning3 {
-  --timer-size: 800px;
+  --timer-size: 600px;
 }
 
 body {
