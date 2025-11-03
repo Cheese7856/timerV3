@@ -292,15 +292,19 @@ button {
   display: block;
 }
 
-#visningKnapp svg:last-child {
+#visningKnapp svg {
   display: none;
 }
 
-.visning2 #visningKnapp svg:first-child {
-  display: none;
+.visning1 #visning1Knapp {
+  display: block;
 }
 
-.visning2 #visningKnapp svg:last-child {
+.visning2 #visning2Knapp {
+  display: block;
+}
+
+.visning3 #visning3Knapp {
   display: block;
 }
 
