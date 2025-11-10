@@ -48,8 +48,6 @@ function counterTo(start, slutt, navnevan) {
     timerLoop = setInterval(() => { // Remove 'const' to use the global variable
         opdater()
 
-        console.log(diffSek)
-
         if (diffSek <= 0) {
             clearInterval(timerLoop);
             diffSek = 999
