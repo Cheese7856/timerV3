@@ -63,13 +63,7 @@ function opdater() {
     const sek = diffSek % 60;
     const resultat = `${min}:${sek.toString().padStart(2, "0")}`;
 
-
-    if (document.body.classList.contains("visning3")) {
-        tekst.innerHTML = `${resultat}<br><span>${navn}</span>`;
-    } else {
-        tekst.innerHTML = resultat;
-    }
-
+    tekst.innerHTML = resultat;
     document.title = `${resultat}`
 
     // Oppdater PiP hvis aktiv

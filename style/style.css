@@ -136,13 +136,7 @@ td {
   transform: translate(-50%, -50%);
 }
 
-#timerTekst {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin: 0;
-
+.tekstTimer {
   font-size: 65px;
   text-align: center;
   font-weight: bold;
@@ -151,12 +145,35 @@ td {
   transition: color var(--modeTransition) ease;
 }
 
+#timerTekst {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+}
+
+#timeTekst {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+
+  display: none;
+}
+
+.visning3 #timeTekst {
+  display: block;
+}
+
 .visning2 #timerTekst {
   font-size: 130px;
 }
 
 .visning3 #timerTekst {
-  font-size: 140px;
+  font-size: 500px;
+  top: 45%;
 }
 
 span {
@@ -310,5 +327,9 @@ button {
 
 .visning3 h1,
 .visning2 h1 {
+  display: none;
+}
+
+.visning3 circle-progress {
   display: none;
 }
