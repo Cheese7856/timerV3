@@ -98,10 +98,17 @@ function gjørAlt(klasse) {
 
         document.body.classList.add("friminutt")
 
-        console.log("Counter:", timeplanDag[nesteID - 1].Slutt, nesteTime.Start)
         render(nesteTime, false)
         // counterTo("09:50", "10:09")
-        counterTo(timeplanDag[nesteID - 1].Slutt, nesteTime.Start, nesteTime.Navn)
+
+        if (nesteID == 0) {
+            counterTo("00:00", nesteTime.Start, nesteTime.Navn)
+            console.log("Counter:", "00:00", nesteTime.Start)
+        } else {
+            counterTo(timeplanDag[nesteID - 1].Slutt, nesteTime.Start, nesteTime.Navn)
+            console.log("Counter:", timeplanDag[nesteID - 1].Slutt, nesteTime.Start)
+        }
+
 
     } else {
         //I en Time
