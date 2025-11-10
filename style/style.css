@@ -161,6 +161,7 @@ td {
   margin: 0;
 
   display: none;
+  white-space: nowrap;
 }
 
 .visning3 #timeTekst {

@@ -39,6 +39,7 @@ window.endreKlasse = endreKlasse;
 function render(time, iTime) {
     document.getElementById("timeH").innerHTML = iTime ? "Time:" : "Neste time:";
     document.getElementById("time").innerHTML = time.Navn
+    document.getElementById("timeTekst").innerHTML = time.Navn
 
     document.getElementById("lærer").innerHTML = time.Lærer.join(" og ")
 
