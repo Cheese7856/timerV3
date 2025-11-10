@@ -72,7 +72,7 @@ function opdater() {
         tekst.innerHTML = resultat;
     }
 
-
+    document.title = `${resultat}`
 
     // Oppdater PiP hvis aktiv
     if (pipAktiv) {

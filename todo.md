@@ -10,3 +10,4 @@
   - [x] Visning 3 (kun timer)
 - [ ] Åpne classroom link
 - [x] ~~Fikse feilmelding når ingen timer finnes~~ Ingen response med ingen time
+- [x] Nedtelling i tab
