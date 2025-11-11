@@ -8,15 +8,19 @@
     "KRLE": "https://classroom.google.com/c/NzA5NTM1NDA0MjY3",
     "Naturfag": "https://classroom.google.com/c/NzA5NDIyMjIzMTMz",
     "Engelsk": "https://classroom.google.com/c/NzA3MzMzNTIwODcz",
-    "Kroppsøving": "https://classroom.google.com/c/NzE4MDk1MTM3MTAw"
+    "Kroppsøving": "https://classroom.google.com/c/NzE4MDk1MTM3MTAw",
+    "OLWEUS": "https://classroom.google.com/c/NzA5MzU1OTY0NDA5"
   },
   "Timeplan": {
     "Mandag": [
       {
-        "Navn": "OLWEUS / Norsk",
+        "Navn": "Norsk",
         "Start": "08:30",
         "Slutt": "09:30",
-        "Lærer": ["Bård", "Jan Åge"]
+        "Lærer": ["Bård", "Jan Åge"],
+        "Oddetall": {
+          "Navn": "OLWEUS"
+        }
       },
       {
         "Navn": "Norsk",

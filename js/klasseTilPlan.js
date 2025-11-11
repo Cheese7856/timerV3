@@ -74,6 +74,18 @@ function loopTilNeste(timeplanDag, d) {
     }
 }
 
+function oddetallsUke(nesteTime, d) {
+    const ukeNummer = d.isoWeek()
+
+    if ((ukeNummer % 2) == 1) {
+        for (const i in nesteTime.Oddetall) {
+            nesteTime[i] = nesteTime.Oddetall[i]
+        }
+    }
+
+    return nesteTime
+}
+
 function gjørAlt(klasse) {
     console.log("Start av gjøralt")
     // const d = dayjs("09:35", "HH:mm"); //dummy tid, skal være dayjs();
@@ -91,13 +103,15 @@ function gjørAlt(klasse) {
 
 
     const nesteID = loopTilNeste(timeplanDag, d)
-    const nesteTime = timeplanDag[nesteID]
+    let nesteTime = timeplanDag[nesteID]
 
     if (!nesteTime) {
 
         document.querySelector("#timerTekst").innerHTML = `Ingen time`
         return (null)
     }
+
+    nesteTime = oddetallsUke(nesteTime, d)
 
     const startTid = dayjs(nesteTime.Start, "HH:mm");
     if (startTid.isAfter(d)) {
