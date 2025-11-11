@@ -50,6 +50,12 @@ function render(time, iTime) {
 
     document.getElementById("start").innerHTML = time.Start
     document.getElementById("slutt").innerHTML = time.Slutt
+
+    if (klasseData.Lenker[time.Navn]) {
+        document.getElementById("classroom").setAttribute("href", klasseData.Lenker[time.Navn] || "")
+    } else {
+        document.getElementById("classroom").removeAttribute("href")
+    }
 }
 
 function loopTilNeste(timeplanDag, d) {

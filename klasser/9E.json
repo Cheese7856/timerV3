@@ -1,6 +1,14 @@
 {
-  "Klasser": {
-    "Engelsk": { "lenke": "https://google.com" }
+  "Lenker": {
+    "Utdanningsvalg": "https://classroom.google.com/c/MjM0OTUzNTkzNDBa",
+    "Mat og helse": "https://classroom.google.com/c/MjM0NTMwODczMzFa",
+    "Norsk": "https://classroom.google.com/c/NzA0ODg5NjA4Mjg2",
+    "Matematikk": "https://classroom.google.com/c/NzEwNTA4NjU3MjI1",
+    "Samfunnsfag": "https://classroom.google.com/c/NzA3MjY2MTM3NzQ3",
+    "KRLE": "https://classroom.google.com/c/NzA5NTM1NDA0MjY3",
+    "Naturfag": "https://classroom.google.com/c/NzA5NDIyMjIzMTMz",
+    "Engelsk": "https://classroom.google.com/c/NzA3MzMzNTIwODcz",
+    "Kroppsøving": "https://classroom.google.com/c/NzE4MDk1MTM3MTAw"
   },
   "Timeplan": {
     "Mandag": [
