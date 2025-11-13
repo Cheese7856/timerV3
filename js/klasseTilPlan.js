@@ -86,7 +86,7 @@ function oddetallsUke(nesteTime, d) {
     return nesteTime
 }
 
-function gjørAlt(klasse) {
+function gjørAlt() {
     console.log("Start av gjøralt")
     // const d = dayjs("09:35", "HH:mm"); //dummy tid, skal være dayjs();
     const d = dayjs()
@@ -126,7 +126,7 @@ function gjørAlt(klasse) {
             counterTo("00:00", nesteTime.Start, nesteTime.Navn)
             console.log("Counter:", "00:00", nesteTime.Start)
         } else {
-            counterTo(timeplanDag[nesteID - 1].Slutt, nesteTime.Start, nesteTime.Navn)
+            counterTo(timeplanDag[nesteID - 1].Slutt, nesteTime.Start, "Friminutt")
             console.log("Counter:", timeplanDag[nesteID - 1].Slutt, nesteTime.Start)
         }
 

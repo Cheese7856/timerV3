@@ -64,7 +64,8 @@ function opdater() {
     const resultat = `${min}:${sek.toString().padStart(2, "0")}`;
 
     tekst.innerHTML = resultat;
-    document.title = `${resultat}`
+
+    document.title = navn + ": " + resultat
 
     // Oppdater PiP hvis aktiv
     if (pipAktiv) {
