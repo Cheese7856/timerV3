@@ -8,6 +8,8 @@
   - [x] Visning 1 (vanlig)
   - [x] Visning 2 (timer og info)
   - [x] Visning 3 (kun timer)
-- [ ] Åpne classroom link
+- [x] Åpne classroom link
+  - [ ] 9D
+  - [x] 9E
 - [x] ~~Fikse feilmelding når ingen timer finnes~~ Ingen response med ingen time
 - [x] Nedtelling i tab
