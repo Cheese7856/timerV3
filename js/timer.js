@@ -24,7 +24,7 @@ function drawPipCountdown(min, sek) {
 
     // Siste 10 sekunder: blink rød/standardBakgrunn annenhvert sekund
     let bakgrunn = standardBakgrunn;
-    if (totalSekIgjen <= 10) {
+    if (totalSekIgjen <= 15 && canvas.classList.contains("blinking")) {
         bakgrunn = (totalSekIgjen % 2 === 0) ? "red" : standardBakgrunn;
     }
 

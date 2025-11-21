@@ -177,10 +177,6 @@ td {
   top: 45%;
 }
 
-span {
-  font-size: 100px;
-}
-
 #kontroller {
   position: fixed;
   left: 50%;
@@ -296,18 +292,6 @@ button {
 
 .modusKnapp svg {
   fill: #000000;
-}
-
-#themeSwitch svg:last-child {
-  display: none;
-}
-
-.darkMode #themeSwitch svg:first-child {
-  display: none;
-}
-
-.darkMode #themeSwitch svg:last-child {
-  display: block;
 }
 
 #visningKnapp svg {
