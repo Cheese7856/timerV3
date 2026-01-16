@@ -32,7 +32,7 @@
         "Navn": "Matematikk",
         "Start": "10:50",
         "Slutt": "11:50",
-        "Lærer": ["Veronica", "Ine"]
+        "Lærer": ["Veronica", "Isak"]
       },
       {
         "Navn": "Engelsk",
@@ -84,7 +84,7 @@
         "Navn": "Naturfag",
         "Start": "10:50",
         "Slutt": "11:50",
-        "Lærer": ["Ine"]
+        "Lærer": ["Isak"]
       },
       {
         "Navn": "KRLE",
@@ -128,7 +128,7 @@
         "Navn": "Matematikk",
         "Start": "13:30",
         "Slutt": "14:30",
-        "Lærer": ["Veronica", "Ine"]
+        "Lærer": ["Veronica", "Isak"]
       }
     ],
     "Fredag": [
@@ -148,7 +148,7 @@
         "Navn": "Naturfag",
         "Start": "10:50",
         "Slutt": "11:50",
-        "Lærer": ["Ine"]
+        "Lærer": ["Isak"]
       },
       {
         "Navn": "Kroppsøving",

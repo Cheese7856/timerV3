@@ -5,7 +5,7 @@
         "Navn": "Matematikk",
         "Start": "08:30",
         "Slutt": "09:30",
-        "Lærer": ["Ine", "Zeki"]
+        "Lærer": ["Isak", "Zeki"]
       },
       {
         "Navn": "Samfunnsfag",
@@ -63,7 +63,7 @@
         "Navn": "Matematikk",
         "Start": "08:30",
         "Slutt": "09:30",
-        "Lærer": ["Ine", "Zeki"]
+        "Lærer": ["Isak", "Zeki"]
       },
       {
         "Navn": "Norsk",
@@ -101,7 +101,7 @@
         "Navn": "Naturfag",
         "Start": "10:50",
         "Slutt": "11:50",
-        "Lærer": ["Ine"]
+        "Lærer": ["Isak"]
       },
       {
         "Navn": "KRLE",
@@ -121,7 +121,7 @@
         "Navn": "Naturfag",
         "Start": "08:30",
         "Slutt": "09:30",
-        "Lærer": ["Ine"]
+        "Lærer": ["Isak"]
       },
       {
         "Navn": "Norsk",
@@ -139,13 +139,13 @@
         "Navn": "Utdanningsvalg",
         "Start": "12:20",
         "Slutt": "13:20",
-        "Lærer": ["Ine"]
+        "Lærer": ["Isak"]
       },
       {
         "Navn": "Matematikk",
         "Start": "13:30",
         "Slutt": "14:30",
-        "Lærer": ["Ine", "Zeki"]
+        "Lærer": ["Isak", "Zeki"]
       }
     ],
     "Søndag": [
