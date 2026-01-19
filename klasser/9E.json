@@ -39,6 +39,12 @@
         "Start": "12:20",
         "Slutt": "13:20",
         "Lærer": ["Heidi", "Joakim"]
+      },
+      {
+        "Navn": "Matematikk",
+        "Start": "13:30",
+        "Slutt": "14:30",
+        "Lærer": ["Veronica", "Isak"]
       }
     ],
     "Tirsdag": [

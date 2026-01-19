@@ -3,6 +3,12 @@
     "Mandag": [
       {
         "Navn": "Matematikk",
+        "Start": "09:40",
+        "Slutt": "10:40",
+        "Lærer": ["Isak", "Zeki"]
+      },
+      {
+        "Navn": "Matematikk",
         "Start": "08:30",
         "Slutt": "09:30",
         "Lærer": ["Isak", "Zeki"]
