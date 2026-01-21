@@ -1,4 +1,9 @@
 {
+  "Forkortelser": {
+    "Mat og helse": "MHE",
+    "Fremmedspråk / Arbeidslivsfag": "Språk",
+    "Matematikk": "Matte"
+  },
   "Timeplan": {
     "Mandag": [
       {

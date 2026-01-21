@@ -113,6 +113,8 @@ function gjørAlt() {
 
     nesteTime = oddetallsUke(nesteTime, d)
 
+    let kortNavn = klasseData.Forkortelser[nesteTime.Navn]
+
     const startTid = dayjs(nesteTime.Start, "HH:mm");
     if (startTid.isAfter(d)) {
         //I et Friminutt
@@ -123,10 +125,10 @@ function gjørAlt() {
         // counterTo("09:50", "10:09")
 
         if (nesteID == 0) {
-            counterTo("00:00", nesteTime.Start, nesteTime.Navn)
+            counterTo("00:00", nesteTime.Start, nesteTime.Navn, kortNavn)
             console.log("Counter:", "00:00", nesteTime.Start)
         } else {
-            counterTo(timeplanDag[nesteID - 1].Slutt, nesteTime.Start, "Friminutt")
+            counterTo(timeplanDag[nesteID - 1].Slutt, nesteTime.Start, "Friminutt", kortNavn)
             console.log("Counter:", timeplanDag[nesteID - 1].Slutt, nesteTime.Start)
         }
 
@@ -139,7 +141,7 @@ function gjørAlt() {
         console.log("Counter:", nesteTime.Start, nesteTime.Slutt)
 
         // counterTo("08:55", "9:45")
-        counterTo(nesteTime.Start, nesteTime.Slutt, nesteTime.Navn)
+        counterTo(nesteTime.Start, nesteTime.Slutt, nesteTime.Navn, kortNavn)
 
         render(nesteTime, true)
     }

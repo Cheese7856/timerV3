@@ -8,6 +8,7 @@ let startDT
 let sluttDT
 let navn
 let diffSek
+let kortNavn
 
 function drawPipCountdown(min, sek) {
     const canvas = document.getElementById("pipCanvas");
@@ -37,11 +38,12 @@ function drawPipCountdown(min, sek) {
     ctx.fillText(`${min}:${sek.toString().padStart(2, "0")}`, canvas.width / 2, canvas.height / 2);
 }
 
-function counterTo(start, slutt, navnevan) {
+function counterTo(start, slutt, navnevan, kortNavnNavn) {
     const cp = document.querySelector("#cp");
     startDT = dayjs(start, "HH:mm");
     sluttDT = dayjs(slutt, "HH:mm");
     navn = navnevan
+    kortNavn = kortNavnNavn
     const max = sluttDT.diff(startDT, "second");
     cp.setAttribute("max", max);
 
@@ -65,7 +67,7 @@ function opdater() {
 
     tekst.innerHTML = resultat;
 
-    document.title = navn + ": " + resultat
+    document.title = (kortNavn||navn) + ": " + resultat
 
     // Oppdater PiP hvis aktiv
     if (pipAktiv) {
