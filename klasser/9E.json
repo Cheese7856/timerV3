@@ -22,16 +22,17 @@
         "Navn": "Norsk",
         "Start": "08:30",
         "Slutt": "09:30",
-        "Lærer": ["Bård", "Jan Åge"],
+        "Lærer": ["Bård", "Victoria"],
         "Oddetall": {
-          "Navn": "OLWEUS"
+          "Navn": "OLWEUS",
+          "Lærer": ["Bård"]
         }
       },
       {
         "Navn": "Norsk",
         "Start": "09:40",
         "Slutt": "10:40",
-        "Lærer": ["Jan Åge"]
+        "Lærer": ["Lisa", "Victoria"]
       },
       {
         "Navn": "Matematikk",
@@ -69,7 +70,7 @@
         "Navn": "Norsk",
         "Start": "10:50",
         "Slutt": "11:50",
-        "Lærer": ["Bård", "Jan Åge"]
+        "Lærer": ["Bård", "Victoria"]
       },
       {
         "Navn": "Engelsk",
@@ -133,7 +134,7 @@
         "Navn": "Norsk",
         "Start": "12:20",
         "Slutt": "13:20",
-        "Lærer": ["Bård", "Jan Åge"]
+        "Lærer": ["Bård", "Victoria"]
       },
       {
         "Navn": "Matematikk",
