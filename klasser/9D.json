@@ -83,10 +83,14 @@
         "Lærer": ["Bård", "Azar"]
       },
       {
-        "Navn": "Utdanningsvalg (oddetall) / Norsk (partall)",
+        "Navn": "Norsk",
         "Start": "10:50",
         "Slutt": "11:50",
-        "Lærer": ["Sigbjørn", "Bård", "Azar"]
+        "Lærer": ["Bård"],
+        "Oddetall": {
+          "Navn": "Utdanningsvalg",
+          "Lærer": ["Sigbjørn"]
+        }
       },
       {
         "Navn": "KRLE",
