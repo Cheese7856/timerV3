@@ -22,7 +22,7 @@
         "Navn": "Norsk",
         "Start": "08:30",
         "Slutt": "09:30",
-        "Lærer": ["Bård", "Victoria"],
+        "Lærer": ["Bård", "Lisa"],
         "Oddetall": {
           "Navn": "OLWEUS",
           "Lærer": ["Bård"]
