@@ -1,168 +1,156 @@
 {
   "Forkortelser": {
-    "Mat og helse": "MHE",
+    "Kunst og håndverk": "K&H",
     "Fremmedspråk / Arbeidslivsfag": "Språk",
     "Matematikk": "Matte"
   },
   "Timeplan": {
     "Mandag": [
       {
-        "Navn": "Matematikk",
+        "Navn": "Engelsk",
         "Start": "08:30",
         "Slutt": "09:30",
-        "Lærer": ["Isak", "Zeki"]
+        "Lærer": ["Heidi", "Sigbjørn"]
       },
       {
-        "Navn": "Samfunnsfag",
+        "Navn": "Naturfag",
         "Start": "09:40",
         "Slutt": "10:40",
-        "Lærer": ["Bård"]
+        "Lærer": ["Zeki"]
       },
       {
-        "Navn": "Engelsk",
+        "Navn": "Matematikk",
         "Start": "10:50",
         "Slutt": "11:50",
-        "Lærer": ["Sigbjørn", "Heidi"]
+        "Lærer": ["Charlotte", "Zeki"]
       },
       {
         "Navn": "Kroppsøving",
         "Start": "12:20",
         "Slutt": "13:20",
-        "Lærer": ["Isak"]
+        "Lærer": ["Vegard"]
       },
       {
         "Navn": "Kroppsøving",
         "Start": "13:30",
         "Slutt": "14:30",
-        "Lærer": ["Isak"]
+        "Lærer": ["Vegard"]
       }
     ],
     "Tirsdag": [
       {
-        "Navn": "Fremmedspråk / Arbeidslivsfag",
+        "Navn": "Engelsk",
         "Start": "08:30",
         "Slutt": "09:30",
-        "Lærer": []
+        "Lærer": ["Heidi", "Sigbjørn"]
       },
       {
-        "Navn": "Fremmedspråk / Arbeidslivsfag",
+        "Navn": "Matematikk",
         "Start": "09:40",
         "Slutt": "10:40",
-        "Lærer": []
+        "Lærer": ["Charlotte", "Zeki"]
       },
       {
-        "Navn": "Mat og helse",
+        "Navn": "Musikk",
         "Start": "10:50",
         "Slutt": "11:50",
-        "Lærer": ["Ann Christin"]
+        "Lærer": ["Sigbjørn"]
       },
       {
-        "Navn": "Mat og helse",
+        "Navn": "Musikk",
         "Start": "12:20",
         "Slutt": "13:20",
-        "Lærer": ["Ann Christin"]
+        "Lærer": ["Sigbjørn"]
       }
     ],
     "Onsdag": [
       {
-        "Navn": "Matematikk",
+        "Navn": "Samfunnsfag",
         "Start": "08:30",
         "Slutt": "09:30",
-        "Lærer": ["Isak", "Zeki"]
+        "Lærer": ["Bård"]
       },
       {
-        "Navn": "Norsk",
+        "Navn": "Naturfag",
         "Start": "09:40",
         "Slutt": "10:40",
-        "Lærer": ["Bård", "Azar"]
-      },
-      {
-        "Navn": "Norsk",
-        "Start": "10:50",
-        "Slutt": "11:50",
-        "Lærer": ["Bård"],
-        "Oddetall": {
-          "Navn": "Utdanningsvalg",
-          "Lærer": ["Sigbjørn"]
-        }
+        "Lærer": ["Zeki"]
       },
       {
         "Navn": "KRLE",
-        "Start": "12:20",
-        "Slutt": "13:20",
+        "Start": "10:50",
+        "Slutt": "11:50",
         "Lærer": ["Sigbjørn"]
       },
       {
-        "Navn": "Valgfag (se uker)",
-        "Start": "13:30",
-        "Slutt": "14:30",
+        "Navn": "Valgfag",
+        "Start": "12:20",
+        "Slutt": "13:20",
         "Lærer": []
       }
     ],
     "Torsdag": [
       {
-        "Navn": "Engelsk",
+        "Navn": "Matematikk",
+        "Start": "08:30",
+        "Slutt": "09:30",
+        "Lærer": ["Charlotte", "Zeki"]
+      },
+      {
+        "Navn": "Norsk",
         "Start": "09:40",
         "Slutt": "10:40",
-        "Lærer": ["Sigbjørn"]
+        "Lærer": ["Bård", "Tarita"]
       },
       {
-        "Navn": "Naturfag",
+        "Navn": "Fremmedspråk / Arbeidslivsfag",
         "Start": "10:50",
         "Slutt": "11:50",
-        "Lærer": ["Isak"]
+        "Lærer": []
       },
       {
-        "Navn": "KRLE",
+        "Navn": "Fremmedspråk / Arbeidslivsfag",
         "Start": "12:20",
         "Slutt": "13:20",
-        "Lærer": ["Sigbjørn"]
+        "Lærer": []
       },
       {
-        "Navn": "Samfunnsfag",
+        "Navn": "Utdanningsvalg",
         "Start": "13:30",
-        "Slutt": "14:30",
-        "Lærer": ["Bård"]
+        "Slutt": "14:00",
+        "Lærer": ["Sigbjørn"]
       }
     ],
     "Fredag": [
       {
-        "Navn": "Naturfag",
+        "Navn": "Samfunnsfag",
         "Start": "08:30",
         "Slutt": "09:30",
-        "Lærer": ["Isak"]
+        "Lærer": ["Bård"]
       },
       {
         "Navn": "Norsk",
         "Start": "09:40",
         "Slutt": "10:40",
-        "Lærer": ["Bård", "Azar"]
+        "Lærer": ["Bård", "Tarita"]
       },
       {
         "Navn": "Norsk",
         "Start": "10:50",
         "Slutt": "11:50",
-        "Lærer": ["Bård", "Azar"]
+        "Lærer": ["Bård", "Tarita"]
       },
       {
-        "Navn": "Utdanningsvalg",
+        "Navn": "Kunst og håndverk",
         "Start": "12:20",
         "Slutt": "13:20",
-        "Lærer": ["Isak"]
+        "Lærer": ["Tarita"]
       },
       {
-        "Navn": "Matematikk",
+        "Navn": "Kunst og håndverk",
         "Start": "13:30",
         "Slutt": "14:30",
-        "Lærer": ["Isak", "Zeki"]
-      }
-    ],
-    "Søndag": [
-      {
-        "Navn": "Mekemek",
-        "Start": "13:30",
-        "Slutt": "14:30",
-        "Lærer": ["Elander"]
+        "Lærer": ["Tarita", "Marianne"]
       }
     ]
   }
